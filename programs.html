@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome!</title>
+  </head>
+    <style>
+        body{
+            font-size:16pt;
+        }
+        div{
+            font-size: 18pt;
+            background-color: #D3D3D3;
+        }
+        div pr{
+            color:blue;
+        }
+        div sc{
+            color:red;
+        }
+        div wl{
+            color:darkred;
+        }
+        div wt{
+            color:forestgreen;
+        }
+        div n{
+            color:black;
+        }
+        div ct{
+            color:darkgreen;
+        }
+        div nu{
+            color:darkmagenta;
+        }
+        ar {
+            font-size:18pt;
+            background-color:azure;
+        }
+        ar k {
+            color:blue;
+            width:
+        }
+        table,th{
+            border-width: medium;
+            border-color:black;
+        }
+    </style>
+  <body>  
+<h1>Program examples</h1>
+ <div><pr>Program </pr><n>hello</n><sc>;</sc><br>
+     <pr>Var</pr><br>
+     <n>&nbsp;&nbsp;&nbsp;&nbsp;a</n><sc> : </sc><wl>Integer</wl><sc>;</sc><br>
+     <pr>Begin</pr><br>
+     <wl>Write('</wl><wt>Enter a number : </wt><wl>')</wl><sc>;</sc><br><wl>Writeln('</wl><wt>Enter a number : </wt><wl>')</wl><sc>;</sc><ct>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//output things</ct><br><wl>Readln(</wl><n>a</n><wl>)</wl><sc>;</sc><ct>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//read input and assign the value to variables</ct><br>
+   <pr>End.</pr>
+     
+     </div>
+      This is the example of a simple program.
+    <br>  <ar><k>Var</k> is used to declare a variable for calling.<br>
+      <k>Write</k> and<k> Writeline</k> is used to create output for users.<br>
+      <k>Function</k> is a little program which must has a return value.<br>
+      <k>Procedure</k> is same as function but it don't necessarily have a return value.<br>
+      <k>Readkey</k> reads the key the user enters.<br>
+      <k>ClrScr</k> clears the console screen.<br>
+      <k>Uses</k> declares the libraries and references you are using.<br>
+      <k>Mod</k> takes the remainder and <k>Div</k> takes the quotient. <br>
+      And a lot more.
+      </ar><br><br>
+      Here, I will show u some coding examples.
+      <div><pr>Function </pr><n>BinaryToDenary </n><sc>( </sc><n>Bin</n><sc> : </sc><wl>Integer</wl><sc> ) </sc><sc>;</sc><br><pr>Begin</pr><br><n>&nbsp;&nbsp;&nbsp;&nbsp;BinToDen&nbsp;&nbsp;</n><sc>:= </sc><nu>0</nu><sc>;</sc><br><n>&nbsp;&nbsp;&nbsp;&nbsp;multiple&nbsp;&nbsp;</n><sc>:= </sc><nu>1</nu><sc>;</sc><br><pr>&nbsp;&nbsp;&nbsp;&nbsp;Repeat</pr><br><n>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BinToDen&nbsp;&nbsp;</n><sc>:= </sc><n>BinToDen </n><sc>+ </sc> Bin <pr>Mod</pr> <nu>2</nu> <sc>*</sc> <n>multiple</n> <sc>;</sc><br>
+      <n>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bin&nbsp;&nbsp;</n><sc>:= </sc><n>Bin </n><pr>Div </pr> <nu>10</nu><sc>;</sc><br><n>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;multiple&nbsp;&nbsp;</n><sc>:= </sc><n>multiple </n><sc>* </sc><nu>2</nu><sc>;</sc><br><pr>&nbsp;&nbsp;&nbsp;&nbsp;Until </pr><n>Bin </n><sc> = </sc><nu>0</nu><sc>;</sc><br><pr>End</pr><sc>;</sc><br>
+          
+          <pr>Function </pr><n>DenaryToBinary </n><sc>( </sc><n>Den</n><sc> : </sc><wl>Integer</wl><sc> ) </sc><sc>;</sc><br><pr>Begin</pr><br><n>&nbsp;&nbsp;&nbsp;&nbsp;DenToBin&nbsp;&nbsp;</n><sc>:= </sc><nu>0</nu><sc>;</sc><br><n>&nbsp;&nbsp;&nbsp;&nbsp;multiple&nbsp;&nbsp;</n><sc>:= </sc><nu>1</nu><sc>;</sc><br><pr>&nbsp;&nbsp;&nbsp;&nbsp;Repeat</pr><br><n>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DenToBin&nbsp;&nbsp;</n><sc>:= </sc><n>DenToBin </n><sc>+ </sc> Den <pr>Mod</pr> <nu>2</nu> <sc>*</sc> <n>multiple</n> <sc>;</sc><br>
+      <n>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Den&nbsp;&nbsp;</n><sc>:= </sc><n>Den </n><pr>Div </pr> <nu>2</nu><sc>;</sc><br><n>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;multiple&nbsp;&nbsp;</n><sc>:= </sc><n>multiple </n><sc>* </sc><nu>10</nu><sc>;</sc><br><pr>&nbsp;&nbsp;&nbsp;&nbsp;Until </pr><n>Den </n><sc> = </sc><nu>0</nu><sc>;</sc><br><pr>End</pr><sc>;</sc>
+    
+      
+      
+      </div>
+      These two programs are used to convert numbers into different numbers in different notation. <br>Compare the difference and understand the principle.
+      <br><br>
+      <div><pr>Program </pr><n>Hello</n><sc>;</sc><br><pr>Begin</pr><br><wl>Write('</wl><wt>Enter a number (4 digits) : </wt><wl>')</wl><sc>;<br></sc><wl>Readln(</wl><n>a</n><wl>)</wl><sc>;</sc><br><n>reverse </n><sc> := </sc><nu>0</nu><sc>;<br></sc><pr>For </pr><n>i </n><sc>:= </sc><nu>1 </nu><pr>To </pr><nu>4 </nu><pr>Do</pr><br><pr>Begin</pr><br><n>&nbsp;&nbsp;&nbsp;&nbsp;reverse </n><sc>:= </sc><n>reverse </n><sc>* </sc><nu>10 </nu><sc>+ </sc><n>a </n><pr>Mod </pr><nu>10</nu><sc>;</sc><br><n>&nbsp;&nbsp;&nbsp;&nbsp;a </n><sc>:= </sc><n>a </n><pr>div </pr><nu>10</nu><sc>;</sc><br><pr>End</pr><sc>;</sc><br><wl>Writeln('</wl><n>reverse</n><wl>)</wl><sc>;</sc><br><pr>End</pr><sc>.</sc>
+      
+      </div>
+      Check out the nested for loop examples.
+      <div><pr>Program </pr><n>Hello</n><sc>;</sc><br><pr>Begin</pr><br><br><pr>For </pr><n>i </n><sc>:= </sc><nu>1 </nu><pr>To </pr><nu>4 </nu><pr>Do</pr><br><pr>Begin</pr><br><pr>&nbsp;&nbsp;&nbsp;&nbsp;For </pr><n>j </n><sc>:= </sc><nu>1 </nu><pr>To </pr><n>i </n><pr>Do </pr><wl>Write('</wl><wt>*</wt><wl>')</wl><sc>;</sc><br><wl>&nbsp;&nbsp;&nbsp;&nbsp;Writeln</wl><sc>;</sc><br><pr>End</pr><sc>;</sc><br><br><pr>For </pr><n>i </n><sc>:= </sc><nu>4 </nu><pr>DownTo </pr><nu>1 </nu><pr>Do</pr><br><pr>Begin</pr><br><pr>&nbsp;&nbsp;&nbsp;&nbsp;For </pr><n>j </n><sc>:= </sc><nu>1 </nu><pr>To </pr><n>5-i </n><pr>Do </pr><wl>Write('</wl><wt>*</wt><wl>')</wl><sc>;</sc><br><wl>&nbsp;&nbsp;&nbsp;&nbsp;Writeln</wl><sc>;</sc><br><pr>End</pr><sc>;</sc><br> <br><pr>End</pr><sc>.</sc></div>
+      <img src="HCF.png"><br>
+      This is an example of a program finding HCF. It can handle both positive and negative numbers. Also, it doesn't matter which number is bigger. However, it can't handle 0.
+      
+      
+  </body>
+</html>
